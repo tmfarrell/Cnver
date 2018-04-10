@@ -16,4 +16,4 @@ alias cnver="perl $CNVer/src/cnver.pl"
 
 ```
 
-See [the paper](https://genome.cshlp.org/content/20/11/1613.full.pdf) for more details on CNVer. 
+See [the paper](https://genome.cshlp.org/content/20/11/1613.full.pdf) for more details on its methodology/ algorithms. 
