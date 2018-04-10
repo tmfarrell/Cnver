@@ -1,7 +1,19 @@
-To install, 
-1. ./configure
-2. make
-3. Set CNVER_FOLDER variable to the cnver directory (e.g. ~/cnver-0.8.3/)
+## CNVer
 
-Please see online for the usage instructions, http://compbio.cs.toronto.edu/CNVer
+To install: 
 
+```bash 
+#!/usr/bin/env bash 
+
+git clone https://github.com/tmfarrell/Cnver.git
+cd Cnver
+
+./configure
+make
+export CNVer=$PWD
+
+alias cnver="perl $CNVer/src/cnver.pl"
+
+```
+
+See [the paper](https://genome.cshlp.org/content/20/11/1613.full.pdf) for more details on CNVer. 
