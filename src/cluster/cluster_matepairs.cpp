@@ -24,6 +24,21 @@ int colDist, colChr, colLeft, colRight, colID, colTemplate, baseLenFactor, mean,
 int mdSignifTol;
 int CONCISE;
 
+string & make_T(string & s, string & dummy) {
+	return s;
+}
+
+vector<string> make_T (string & s, vector<string> & dummy) {
+	//tokenize the string
+	vector<string> row;
+	istringstream istrm(s);
+	string val;
+	while (istrm >> val) {
+	       row.push_back(val);
+	}
+	return row;
+}
+
 template<class T>
 class winScan {  //read in input file using a sliding window so as not to keep everything in memory.
 public:
@@ -75,22 +90,6 @@ private:
 	T dummyT;
 	
 };
-
-
-string & make_T(string & s, string & dummy) {
-	return s;
-}
-
-vector<string> make_T (string & s, vector<string> & dummy) {
-	//tokenize the string
-	vector<string> row;
-	istringstream istrm(s);
-	string val;
-	while (istrm >> val) {
-	       row.push_back(val);
-	}
-	return row;
-}
 
 winScan<vector<string> > in;
 

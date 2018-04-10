@@ -11,6 +11,7 @@
 #include<queue>
 #include<cstdarg>
 #include<algorithm>
+#include "getopt.h"
 
 using namespace std;
 ostringstream oMsg;
