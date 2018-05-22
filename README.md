@@ -1,5 +1,7 @@
 ## CNVer
 
+*This fork compiles on macOS (Sierra 10.12.6), while the master does not.*
+
 To install: 
 
 ```bash 
